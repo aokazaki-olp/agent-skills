@@ -1,11 +1,21 @@
 {
   "version": 1,
   "skills": {
+    "activity-log": {
+      "source": ".",
+      "sourceType": "local",
+      "computedHash": "73ce92facc1ebc5bda005e0621cb41c16140d264e8096c1be4f2c7fbbc2ab8c3"
+    },
     "defuddle": {
       "source": "kepano/obsidian-skills",
       "sourceType": "github",
       "skillPath": "skills/defuddle/SKILL.md",
       "computedHash": "5ae2d9f2d5de3f27adb5b4d0a752c16be38f1a2d6316721a74ab721866d5fb2e"
+    },
+    "git-workflow": {
+      "source": ".",
+      "sourceType": "local",
+      "computedHash": "b1b0349148a6bc84a68416eb6216dcc6fd032bf76cfde9b408e038f0efbc6a16"
     },
     "json-canvas": {
       "source": "kepano/obsidian-skills",
@@ -31,11 +41,36 @@
       "skillPath": "skills/obsidian-cli/SKILL.md",
       "computedHash": "f46ae626875f7e47c410c2ee93896c4526024ebe127719e8fb430261b5677edc"
     },
+    "obsidian-config": {
+      "source": ".",
+      "sourceType": "local",
+      "computedHash": "2b344370cdbfaab99f64a2557c44d14fbbf78e687524655e8008f368f27a7831"
+    },
+    "obsidian-log": {
+      "source": ".",
+      "sourceType": "local",
+      "computedHash": "9c91885271042b6ac863a659029389ebd616c9fb8aa0e66086dcde421301b1b3"
+    },
     "obsidian-markdown": {
       "source": "kepano/obsidian-skills",
       "sourceType": "github",
       "skillPath": "skills/obsidian-markdown/SKILL.md",
       "computedHash": "0f47297035d7824e7bf0f1984e8145a59a123e2258b5d54c9ac9642f9f77e177"
+    },
+    "research-workflow": {
+      "source": ".",
+      "sourceType": "local",
+      "computedHash": "416f9fbdce9336485315ec01ff3d642eda926c403bca7bf86a5f7ffb5fe0cf0c"
+    },
+    "skill-builder": {
+      "source": ".",
+      "sourceType": "local",
+      "computedHash": "3e983d7be9ae8563a0a1595292a39d97d9208335e51c07b38c3d212f0e65b1a3"
+    },
+    "skill-script-builder": {
+      "source": ".",
+      "sourceType": "local",
+      "computedHash": "c74576e17ee52014ebd35ee6525695a6463a9fb33b8a3b95a92b244a7fec55f3"
     }
   }
 }
