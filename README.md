@@ -2,7 +2,7 @@
 
 個人用のエージェントスキル置き場。自作スキルと、スキルを作るためのスキルを置く。
 
-自作スキルの正本は `skills/` にある。`.agents/skills/` と `.claude/skills/` は、このリポジトリで使うために `npx skills add` で入れたもの（自作スキルと外部スキル）で、clone した直後から使えるようにコミットしてある。`skills-lock.json` に載っているスキルは、このリポジトリを `npx skills add` したときに配布されない。
+自作スキルの正本は `skills/` にある。`.agents/skills/` と `.claude/skills/` は、このリポジトリで使うために `npx skills add` で入れたもの（自作スキルと外部スキル）で、clone した直後から使えるようにコミットしてある。`.agents/skills/` と `.claude/skills/` にあるスキルのうち `skills-lock.json` に載っているものは、このリポジトリを `npx skills add` したときに配布されない（`skills/` にある自作スキルは配布される）。
 
 ## 自作スキル
 
@@ -13,6 +13,8 @@
 | `obsidian-config` | Obsidian vault へ読み書きする前に、vault パス・保存先・ファイル名・タイムゾーンを解決する |
 | `obsidian-log` | Obsidian vault に追記型の日次ログを書く／読む |
 | `research-workflow` | 外部の仕様を調べるときの作法（一次情報での裏取り） |
+| `skill-builder` | スキルを作る・直す手順（対象の種類の選び方、書き方の指針、静的な検証、試用、配置） |
+| `skill-script-builder` | スキルに同梱するスクリプトを書く手順（Node を優先し、コーディング規約に従う） |
 
 ## 別のプロジェクトへ入れる
 
@@ -35,7 +37,7 @@ rm -f skills-lock.json
 clone した直後から使える。`skills/` を直したら、このリポジトリのルートで次を実行してからコミットする。
 
 ```sh
-DISABLE_TELEMETRY=1 npx skills add . -a universal claude-code --copy -y -s activity-log git-workflow obsidian-config obsidian-log research-workflow
+DISABLE_TELEMETRY=1 npx skills add . -a universal claude-code --copy -y -s activity-log git-workflow obsidian-config obsidian-log research-workflow skill-builder skill-script-builder
 ```
 
 外部スキルを更新するときは次を実行する。`skills-lock.json` は消さない。

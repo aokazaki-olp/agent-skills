@@ -217,3 +217,8 @@ https://www.anthropic.com/news/skills	anthropic-news/skills.md
 https://claude.com/blog/organization-skills-and-directory	anthropic-news/organization-skills-and-directory.md
 https://skills.sh/docs	skills-sh/docs.md
 https://skills.sh/docs/packs	skills-sh/docs-packs.md
+https://code.claude.com/docs/en/desktop.md	claude-code/desktop.md
+https://code.claude.com/docs/en/desktop-quickstart.md	claude-code/desktop-quickstart.md
+https://code.claude.com/docs/en/desktop-linux.md	claude-code/desktop-linux.md
+https://code.claude.com/docs/en/desktop-wsl.md	claude-code/desktop-wsl.md
+https://code.claude.com/docs/en/desktop-scheduled-tasks.md	claude-code/desktop-scheduled-tasks.md

@@ -34,7 +34,7 @@
 
 ## コーディング規約
 
-コーディング規約は `.claude/rules/coding-rules.md` にある。TypeScript / JavaScript のコード、`package.json`、`tsconfig` を書く前・直す前に読む。Claude Code では、該当するファイルを Read・Write・Edit ツールで扱ったときに自動で読み込まれる。Bash（`cat` など）で読んだときは読み込まれないため、自分で読む。
+コーディング規約は `.claude/rules/coding-rules.md` にある。同じものの写しが `skills/skill-script-builder/references/coding-rules.md` にあり、スキルと一緒に配布される。規約を更新するときは両方を同じ内容にする（`cmp` で一致を確かめる）。TypeScript / JavaScript のコード、`package.json`、`tsconfig` を書く前・直す前に読む。Claude Code では、該当するファイルを Read・Write・Edit ツールで扱ったときに自動で読み込まれる。Bash（`cat` など）で読んだときは読み込まれないため、自分で読む。
 
 ## ファイルに書く内容
 
@@ -86,7 +86,7 @@
 |---|---|
 | `skills/` | 自作スキルの正本。`npx skills add` で配布される |
 | `.agents/skills/`、`.claude/skills/` | このリポジトリで使うために `npx skills add` で入れた自作スキルと外部スキル。clone した直後から使えるようにコミットする |
-| `skills-lock.json` | `npx skills add` で入れたスキルの記録。載っているスキルは配布されない |
+| `skills-lock.json` | `npx skills add` で入れたスキルの記録。`.agents/skills/`・`.claude/skills/` にあるスキルのうち、載っているものは配布されない（`skills/` にあるものは配布される） |
 
 - 置き場が 2 つあるのは、複数のエージェントと複数の OS で同じスキルを使うため。`.agents/skills/` は多くのエージェントが読む共通の置き場であり、Claude Code は `.agents/` 配下を読まず `.claude/skills/` を読む
 - `.agents/skills/` と `.claude/skills/` へは、シンボリックリンクではなくコピーで入れる（`--copy`）。シンボリックリンクは Windows と Linux / macOS で挙動が異なるため
