@@ -10,7 +10,7 @@
 
 | フォルダ | 出典 | 版・時点 |
 |---|---|---|
-| `claude-code/` | https://code.claude.com/docs/en/ （スキル、サブエージェント、フック、MCP、プラグイン全般、設定、権限、ツール、Agent SDK、セキュリティ指針、モデル設定、エラー、セッション、worktree、サンドボックス、管理設定など 106 ページ） | changelog の最新は 2.1.289（2026-10-03）。手元の CLI は `claude --version` = 2.1.283、`npm view @anthropic-ai/claude-code version` = 2.1.289 |
+| `claude-code/` | https://code.claude.com/docs/en/ （スキル、サブエージェント、フック、MCP、プラグイン全般、設定、権限、ツール、Agent SDK、セキュリティ指針、モデル設定、エラー、セッション、worktree、サンドボックス、管理設定、Desktop など 111 ページ） | changelog の最新は 2.1.289（2026-10-03）。手元の CLI は `claude --version` = 2.1.283、`npm view @anthropic-ai/claude-code version` = 2.1.289 |
 | `claude-platform/` | https://platform.claude.com/docs/en/ （Agent Skills 概要・ベストプラクティス・API、Skills API、Plugins API、MCP connector、ツール利用とその設計、プロンプト設計と最新モデル別の指針、テストと評価、ガードレール。31 ページ） | 取得日時点 |
 | `agentskills/` | https://agentskills.io/ （Agent Skills のオープン仕様、作成ガイド、評価、説明文の最適化） | 取得日時点 |
 | `mcp/` | https://modelcontextprotocol.io/ の **2026-07-28 版**（docs、specification、クライアント／セキュリティのベストプラクティス、Inspector・デバッグ）と、版のない community / extensions のページ（design-principles、security、apps/build）。50 ページ | versioning ページで「current protocol version は 2026-07-28」と確認。旧版（2025-11-25 以前）と draft は取得していない |
