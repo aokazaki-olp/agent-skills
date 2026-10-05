@@ -19,7 +19,7 @@
 入れたいプロジェクトのルートで実行する。
 
 ```sh
-DISABLE_TELEMETRY=1 npx skills add <このリポジトリの git URL> -a universal claude-code --copy
+DISABLE_TELEMETRY=1 npx skills add https://github.com/aokazaki-olp/agent-skills -a universal claude-code --copy
 DISABLE_TELEMETRY=1 npx skills add https://github.com/kepano/obsidian-skills -a universal claude-code --copy -s defuddle obsidian-markdown
 rm -f skills-lock.json
 ```
