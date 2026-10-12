@@ -12,6 +12,7 @@
 | `git-workflow` | git / GitHub 操作の前に適用する運用規約 |
 | `obsidian-config` | Obsidian vault へ読み書きする前に、vault パス・保存先・ファイル名・タイムゾーンを解決する |
 | `obsidian-log` | Obsidian vault に追記型の日次ログを書く／読む |
+| `persona-forge` | デザイン（UI と UX）の判断を担うペルソナを、調査を根拠に設計し、判断ルールとサブエージェント定義に落とし込み、検証して育てる（Claude Code 専用） |
 | `research-workflow` | 外部の仕様を調べるときの作法（一次情報での裏取り） |
 | `skill-builder` | スキルを作る・直す手順（対象の種類の選び方、書き方の指針、静的な検証、試用、配置） |
 | `skill-script-builder` | スキルに同梱するスクリプトを書く手順（Node を優先し、コーディング規約に従う） |
@@ -27,7 +28,7 @@ rm -f skills-lock.json
 ```
 
 - `-a universal claude-code --copy` で、`.agents/skills/` と `.claude/skills/` の両方に同じ内容のコピーが入る
-- 2 行目は自作スキルが参照する外部スキル（`research-workflow` → `defuddle`、`activity-log`・`obsidian-log` → `obsidian-markdown`）。ほかの Obsidian 系スキルも要るなら `-s` に足す
+- 2 行目は自作スキルが参照する外部スキル（`research-workflow` → `defuddle`、`persona-forge` → `research-workflow`（自作）、`activity-log`・`obsidian-log` → `obsidian-markdown`）。ほかの Obsidian 系スキルも要るなら `-s` に足す
 - `DISABLE_TELEMETRY=1` は、GitHub で公開と確認できないリポジトリの取得元とスキル名が送られうるため
 - 更新は同じコマンドを再実行する（上書きされる）
 - 更新に `npx skills update` を使わない。`--copy` で入れたものがシンボリックリンクに置き換わる
@@ -37,7 +38,7 @@ rm -f skills-lock.json
 clone した直後から使える。`skills/` を直したら、このリポジトリのルートで次を実行してからコミットする。
 
 ```sh
-DISABLE_TELEMETRY=1 npx skills add . -a universal claude-code --copy -y -s activity-log git-workflow obsidian-config obsidian-log research-workflow skill-builder skill-script-builder
+DISABLE_TELEMETRY=1 npx skills add . -a universal claude-code --copy -y -s activity-log git-workflow obsidian-config obsidian-log persona-forge research-workflow skill-builder skill-script-builder
 ```
 
 外部スキルを更新するときは次を実行する。`skills-lock.json` は消さない。
