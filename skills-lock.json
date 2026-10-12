@@ -57,6 +57,11 @@
       "skillPath": "skills/obsidian-markdown/SKILL.md",
       "computedHash": "0f47297035d7824e7bf0f1984e8145a59a123e2258b5d54c9ac9642f9f77e177"
     },
+    "persona-forge": {
+      "source": ".",
+      "sourceType": "local",
+      "computedHash": "b223757291ca2138001272e65445c3de858e4c5a0748fc86d57f7e1bf60ea2c3"
+    },
     "research-workflow": {
       "source": ".",
       "sourceType": "local",
